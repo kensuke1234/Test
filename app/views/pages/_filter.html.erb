@@ -35,37 +35,35 @@
     <div class="row filter-section row-space-top-4 row-space-4">
 
       <div class="col-md-3 text-center">
-        <h4>家のタイプ</h4>
+        <h4>旅のタイプ</h4>
       </div>
       
       <div class="col-md-3 col-xs-4">
-        <%= check_box_tag "q[home_type_eq_any][]", "マンション",session[:Mansion] %> マンション
+        <%= check_box_tag "q[home_type_eq_any][]", "",session[:Hitori] %> 都市部
       </div>
       <div class="col-md-3 col-xs-4">
-        <%= check_box_tag "q[home_type_eq_any][]", "一軒家",session[:House] %> 一軒家
+        <%= check_box_tag "q[home_type_eq_any][]", "一軒家",session[:Futari] %> 都市部から離れた村
       </div>
-      <div class="col-md-3 col-xs-4">
-        <%= check_box_tag "q[home_type_eq_any][]", "アパート",session[:Apartment]%> アパート
-      </div>
+  
     </div>
     
-    <!-- ペットタイプ -->
+    <!-- タイプ -->
     <div class="row filter-section">
       <div class="col-md-3 col-xs-6 text-center">
-        <h4>ペットのタイプ</h4>
+        <h4>大人</h4>
       </div>
       <div class="col-md-3 col-xs-6">
         <div class="form-group">
-          <%= f.select :pet_type_eq, [["犬","犬"], ["猫","猫"], ["鳥類","鳥類"], ["爬虫類","爬虫類"], ["魚類","魚類"], ["両生類","両生類"], ["その他","その他"]], { :include_blank => "Select",:selected => session[:pet_type_eq]},{class: "form-control"} %>
+          <%= f.select :pet_type_eq, [["1","1"], ["2","2"], ["3","3"], ["4","4"], ["5","5"], ["6","6"], ["その他","その他"]], { :include_blank => "Select",:selected => session[:pet_type_eq]},{class: "form-control"} %>
         </div>
       </div>
 
       <div class="col-md-2 col-xs-6 text-center">
-        <h4>飼育歴</h4>
+        <h4>子供</h4>
       </div>
       <div class="col-md-3 col-xs-6">
         <div class="form-group">
-          <%= f.select :breeding_years_gteq, [["1year",1], ["2",2], ["3",3], ["4",4], ["5",5], ["6",6]], {:include_blank => "Select",:selected => session[:breeding_years_gteq]}, {class: 'form-control'} %>
+          <%= f.select :breeding_years_gteq, [["1",1], ["2",2], ["3",3], ["4",4], ["5",5], ["6",6]], {:include_blank => "Select",:selected => session[:breeding_years_gteq]}, {class: 'form-control'} %>
         </div>
       </div>
   

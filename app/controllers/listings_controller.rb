@@ -69,6 +69,9 @@ class ListingsController < ApplicationController
 
   def publish
   end
+  
+  def confirm
+  end
 
   def not_checked
     @listing = Listing.find(params[:listing_id])
@@ -80,7 +83,7 @@ class ListingsController < ApplicationController
 
   private
   def listing_params
-    params.require(:listing).permit(:home_type, :pet_type, :breeding_years, :pet_size, :price_pernight, :address, :listing_title, :listing_content, :active)
+    params.require(:listing).permit(:home_type, :price_pernight, :address, :listing_title, :listing_content, :active)
   end
 
   def set_listing

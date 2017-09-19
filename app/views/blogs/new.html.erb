@@ -1,0 +1,19 @@
+<h1 class="page-title">新規登録</h1>
+    <%= form_for @blog do |f|%>
+    <dl>
+      <dt class="products-title"><%=f.label :title ,"商品名"%></dt>
+      <dd class="products-detail"><%=f.text_field :title%></dd>
+      <dt class="products-title"><%=f.label :price ,"価格"%></dt>
+      <dd class="products-detail"><%=f.text_field :price%></dd>
+      <dt class="products-title"><%=f.label :amount ,"数量"%></dt>
+      <dd class="products-detail"><%=f.text_field :amount%></dd>
+      <dt class="products-title"><%=f.label :image ,"画像"%></dt>
+      <dd class="products-detail"><%=f.attachment_field :image%></dd>
+      <dt class="products-title"><%=f.label :description ,"商品説明"%></dt>
+      <dd class="products-detail"><%=f.text_area :description%></dd>
+    </dl>
+    <p>
+      <%=link_to "商品一覧に戻る", root_path  ,{class:"btn-warning btn-back"}%>
+      <%=f.submit "新規登録" ,{class:"btn-primary btn-act"}%>
+    </p>
+  <% end %>

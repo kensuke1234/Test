@@ -1,0 +1,17 @@
+
+<div class="container">
+  <h1 class="page-title">商品一覧</h1>
+  <ul class="list-group products-list row">
+
+    <%@blogs.each do |item|%>
+    <li class="list-group-item products-item col-sm-12 row">
+      <h2 class="products-title col-sm-4"><%=item.title%></h2><p class="products-price col-sm-2">価格：<span><%=item.price%></span>円</p><p class="col-sm-2 products-number">数量：<span><%=item.amount%></span></p>
+      <%=link_to "編集", edit_blog_path(item.id),{class:"btn-edit btn-warning col-sm-1"}%>
+      <%=link_to "削除" ,blog_path(item.id),{class:"btn-delete btn-warning col-sm-1", method:"delete"}%>
+    </li>
+    <%end%>
+
+  </ul>
+  <%= paginate @blogs %>
+</div>
+

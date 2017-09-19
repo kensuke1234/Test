@@ -22,9 +22,6 @@ ActiveRecord::Schema.define(version: 20160725092520) do
 
   create_table "listings", force: :cascade do |t|
     t.string   "home_type"
-    t.string   "pet_type"
-    t.string   "pet_size"
-    t.integer  "breeding_years"
     t.string   "address"
     t.string   "listing_title"
     t.text     "listing_content"

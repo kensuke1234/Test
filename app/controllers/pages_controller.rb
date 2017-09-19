@@ -56,18 +56,6 @@ class PagesController < ApplicationController
         session[:Apartment] = false
       end
 
-      if params[:q][:pet_type_eq].present?
-        session[:pet_type_eq] = params[:q][:pet_type_eq]
-      else
-        session[:pet_type_eq] = nil
-      end
-
-
-      if params[:q][:breeding_years_gteq].present?
-        session[:breeding_years_gteq] = params[:q][:breeding_years_gteq]
-      else
-        session[:breeding_years_gteq] = nil
-      end
 
     end 
 

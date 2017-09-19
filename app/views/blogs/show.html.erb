@@ -1,0 +1,19 @@
+<div class="container">
+  <h1 class="page-title">商品詳細表示画面</h1>
+    <dl>
+      <dt class="products-title">商品名</dt>
+      <dd class="products-detail"><%=@blog.title%></dd>
+      <dt class="products-title">価格</dt>
+      <dd class="products-detail"><%=@blog.price%></dd>
+      <dt class="products-title">数量</dt>
+      <dd class="products-detail"><%=@blog.amount%></dd>
+      <dt class="products-title">画像</dt>
+      <dd class="products-detail"><%=image_tag attachment_url(@blog, :image) %></dd>
+      <dt class="products-title">商品説明</dt>
+      <dd class="products-detail"><%=@blog.description%></dd>
+    </dl>
+    <p><%=link_to "商品一覧に戻る", root_path  ,{class:"btn-warning btn-back"}%></p>
+</div>
+
+
+

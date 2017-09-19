@@ -59,18 +59,6 @@
                             <i class="fa fa-home fa-3x"></i>
                             <h5><%= @listing.home_type %></h5>
                         </div>
-                        <div class="col-sm-3 col-xs-3 text-center">
-                            <i class="fa fa-linux fa-3x" aria-hidden="true"></i>
-                            <h5><%= @listing.pet_type %></h5>
-                        </div>
-                        <div class="col-sm-3 col-xs-3 text-center">
-                            <i class="fa fa-bug fa-3x" aria-hidden="true"></i>
-                            <h5><%= @listing.pet_size %></h5>
-                        </div>
-                        <div class="col-sm-3 col-xs-3 text-center">
-                            <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
-                            <h5><%= @listing.breeding_years %>年</h5>
-                        </div>
                     </div>
                 </div>
 
@@ -78,7 +66,7 @@
                 <div class="col-md-3">
                     <div class="panel panel-default panel-show">
                         <div class="panel-heading">
-                                <span style="font-size:16px;"><%= @listing.price_pernight %>円（一晩あたり）</span>
+                                <span style="font-size:16px;"><%= @listing.price_pernight %>（1ツアー）</span>
                         </div>
                         
                         <div class="panel-body panel-real">         
@@ -101,7 +89,7 @@
                                     </div>
                                 </div>    
 
-                                <!-- シッター料金 -->
+                                <!-- 料金 -->
                                 <div id="sitter-price" class="row row-space-2 hidden">
                                     <div class="col-md-8 col-xs-8">
                                         
@@ -155,8 +143,7 @@
     <div class="row">
         <div class="col-md-9">
             <h3 class="row-space-3">このリスティングについて</h3>
-                <p><%= @listing.listing_content %><%= @listing.listing_content %><%= @listing.listing_content %><%= @listing.listing_content %><%= @listing.listing_content %><%= @listing.listing_content %><%= @listing.listing_content %><%= @listing.listing_content %><%= @listing.listing_content %><%= @listing.listing_content %><%= @listing.listing_content %><%= @listing.listing_content %><%= @listing.listing_content %><%= @listing.listing_content %>
-                </p>
+                <p><%= @listing.listing_content %></p>
         </div>
 
         <div class="col-md-3">
@@ -354,8 +341,8 @@ $(function() {
                       $('#sitter-price').removeClass('hidden');
                       $('#total-price').removeClass('hidden');
                       $('#applicaton-fee').removeClass('hidden');
-                      $('#sitter-price .col-md-8').text("シッター料:"+"<%= @listing.price_pernight %>"+"円"+" x "+days+"日");
-                      $('#applicaton-fee .col-md-8').text("手数料:シッター料×13.6%");
+                      $('#sitter-price .col-md-8').text("ツアーホストプライス:"+"<%= @listing.price_pernight %>"+"円"+" x "+days+"日");
+                      $('#applicaton-fee .col-md-8').text("手数料:ツアーホストプライス×13.6%");
                       $('#total-price .col-md-8').text("合計料金");
 
                       $('#sitter-price .col-md-4').text(sitter_price+"円");
@@ -414,8 +401,8 @@ $(function() {
                       $('#sitter-price').removeClass('hidden');
                       $('#total-price').removeClass('hidden');
                       $('#applicaton-fee').removeClass('hidden');
-                      $('#sitter-price .col-md-8').text("シッター料:"+"<%= @listing.price_pernight %>"+"円"+" x "+days+"日");
-                      $('#applicaton-fee .col-md-8').text("手数料:シッター料×13.6%");
+                      $('#sitter-price .col-md-8').text("ツアーホストプライス:"+"<%= @listing.price_pernight %>"+"円"+" x "+days+"日");
+                      $('#applicaton-fee .col-md-8').text("手数料:ツアーホストプライス×13.6%");
                       $('#total-price .col-md-8').text("合計料金");
 
                       $('#sitter-price .col-md-4').text(sitter_price+"円");
