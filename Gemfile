@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -7,7 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'hirb'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
 gem 'toastr-rails'
@@ -17,16 +18,18 @@ gem 'dropzonejs-rails'
 gem "figaro", "~> 1.1.0"
 gem 'aws-sdk', '~> 2.3'
 gem 'geocoder'
-gem 'jquery-ui-rails'
+gem 'jquery-ui-rails', '5.0.5'
 gem 'stripe'
-
+gem 'rest-client'
 gem "private_pub"
 gem "thin"
 
 gem 'ransack'
+gem 'firebase'
 
-# Use rails from a branch of koic/rails until rails 5.0.2.
-gem 'rails', git: 'https://github.com/koic/rails', branch: 'quiet_unified_integer_warn_on_rails_5_0_1'
+gem 'hirb'
+gem 'hirb-unicode'
+
 
 group :production do 
 	gem 'pg'
@@ -52,3 +55,5 @@ group :development do
   gem 'spring'
 end
 
+# Use rails from a branch of koic/rails until rails 5.0.2.
+gem 'rails', git: 'https://github.com/koic/rails', branch: 'quiet_unified_integer_warn_on_rails_5_0_1'
