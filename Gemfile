@@ -13,10 +13,10 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
 gem 'toastr-rails'
 gem 'omniauth-facebook'   
-gem "paperclip", "~> 5.0.0.beta1"
+gem 'paperclip', '~> 5.0'
 gem 'dropzonejs-rails'
 gem "figaro", "~> 1.1.0"
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk', '< 2.0'
 gem 'geocoder'
 gem 'jquery-ui-rails', '5.0.5'
 gem 'stripe'
