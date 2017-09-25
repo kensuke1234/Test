@@ -59,6 +59,17 @@ GIT
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
 
+GIT
+  remote: https://github.com/thoughtbot/paperclip.git
+  revision: 82cd3781b4bbfe20778fe5f9a6802d348cd5ee1a
+  specs:
+    paperclip (5.1.0)
+      activemodel (>= 4.2.0)
+      activesupport (>= 4.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (~> 0.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -198,12 +209,6 @@ GEM
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
     orm_adapter (0.5.0)
-    paperclip (5.0.0)
-      activemodel (>= 4.2.0)
-      activesupport (>= 4.2.0)
-      cocaine (~> 0.5.5)
-      mime-types
-      mimemagic (~> 0.3.0)
     pg (0.21.0)
     polyamorous (1.3.1)
       activerecord (>= 3.0)
@@ -302,7 +307,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk (~> 2.x.x)
+  aws-sdk (>= 2.0.0)
   aws-sdk-v1
   bootstrap-sass (~> 3.3.6)
   byebug
@@ -318,7 +323,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails (= 5.0.5)
   omniauth-facebook
-  paperclip
+  paperclip!
   pg
   private_pub
   rails!
