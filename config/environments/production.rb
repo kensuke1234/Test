@@ -90,3 +90,4 @@ config.paperclip_defaults = {
     :secret_access_key => 'Pe9YZQY1vVS3sxSBu4GniuCBBchglJ7Xut9Th+0m'
   }
 }
+end
