@@ -17,8 +17,8 @@ gem 'omniauth-facebook'
 gem 'dropzonejs-rails'
 gem "figaro", "~> 1.1.0"
 
-gem 'aws-sdk', '~> 2.3'
-gem 'paperclip'
+gem 'paperclip', '~> 5.1.0'
+gem 'aws-sdk',   '~> 2.6'
 
 gem 'geocoder'
 gem 'jquery-ui-rails', '5.0.5'
